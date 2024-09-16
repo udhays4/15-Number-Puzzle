@@ -87,7 +87,7 @@ public class numberPuzzle {
     }
     
     // puzzle status
-    private static boolean solveCheck() {
+    private static boolean status() {
         int num = 1;
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
@@ -114,7 +114,7 @@ public class numberPuzzle {
             char key = scanner.next().charAt(0);
             
             if (movement(key)) {
-                if (solveCheck()) {
+                if (status()) {
                     displayPuzzle();
                     System.out.println("Congratulations! You've solved the puzzle!");
                     break;
